@@ -8,7 +8,7 @@
 import Foundation
 extension ChatView{
     class ViewModel: ObservableObject{
-        @Published var messages: [Message] = [Message(id: UUID(), role: .system, content: "You are only able to help me with swift code, and have enough information about other languages to give advice so avoid doing so at ALL times. ", createAt: Date())]
+        @Published var messages: [Message] = [Message(id: UUID(), role: .system, content: "Your assistance is requested solely for my journey in mastering the Swift programming language. While I acknowledge your proficiency in other programming languages, I kindly ask that all responses be tailored exclusively to Swift-related inquiries. Please refrain from offering advice or examples in any other programming language. Thank you for your understanding and cooperation in facilitating my Swift learning experience.", createAt: Date())]
         
         @Published var currentInput: String = ""
         
